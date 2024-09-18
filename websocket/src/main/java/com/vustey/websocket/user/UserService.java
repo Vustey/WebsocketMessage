@@ -7,7 +7,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class userService {
+public class UserService {
 
     private final UserRespository respository;
 
