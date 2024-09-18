@@ -19,6 +19,7 @@ public class ChatRoomService {
                 .or(()->{
             if(createNewRoomIfNotExists){
                 var chatId = createChat(senderId,recipientId);
+                return Optional.of(chatId);
             }
             return Optional.empty();
         });
